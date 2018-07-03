@@ -42,12 +42,13 @@ h1 {
 p {
 	width: 50px;
 	height: 50px;
+	text-align: center;
+	color: white;
 	background-color: #1abc9c;
 }
 
 p.move-right {
 	background-color: #3498db;
-	transform: translateX(10px);
 }
 
 p.move-down {
@@ -61,4 +62,25 @@ p:hover {
 p.move-down:hover {
 	transform: scale(2);
 	transform-origin: 0 0;
+}
+
+p.move-right:hover {
+	transform: rotate(-45deg) scale(0.5);
+	transform-origin: right top;
+}
+
+p.animated-box {
+	height: 100px;
+	width: 100px;
+	line-height: 100px;
+	font-size: 17px;
+	border-radius: 20px;
+}
+p.animated-box:hover {
+	background: #e74c3c;
+	transform-origin: top left;
+	transform: scale(2);
+	border-radius: 50px;
+	transition-property: background, border-radius;
+	transition-duration: 5s, 1s;
 }
