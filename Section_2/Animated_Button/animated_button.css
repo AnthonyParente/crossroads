@@ -1,0 +1,107 @@
+body {
+	background-color: #fcd04b;
+	font-family: Galada;
+	color: white;
+}
+
+h1 {
+	text-align: center;
+	font-weight: 300;
+}
+
+.btn {
+	outline:none;
+	border: none;
+	cursor: pointer;
+	display: block;
+	/*Allows the button to appear clicked when hovered over*/
+	position: relative;
+	background-color: #fcad26;
+	font-size: 16px;
+	font-weight: 300px;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding: 25px 80px;
+	margin: 0 auto;
+	border-radius: 20px;
+	box-shadow: 0 6px #efa424;
+}
+
+.btn:hover {
+	box-shadow: 0 4px #efa424;
+	/*Gives the appearance of the button being clicked by moving the top*/
+	top: 2px;
+}
+
+.btn:active {
+	box-shadow: none;
+	top: 6px;
+}
+
+p {
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	color: white;
+	background-color: #1abc9c;
+}
+
+p.move-right {
+	background-color: #3498db;
+}
+
+p.move-down {
+	background-color: #3498ac;
+}
+
+p:hover {
+	transform: rotate(45deg);
+}
+
+p.move-down:hover {
+	transform: scale(2);
+	transform-origin: 0 0;
+}
+
+p.move-right:hover {
+	transform: rotate(-45deg) scale(0.5);
+	transform-origin: right top;
+}
+
+p.animated-box {
+	height: 100px;
+	width: 100px;
+	line-height: 100px;
+	font-size: 17px;
+	border-radius: 20px;
+}
+p.animated-box:hover {
+	background: #e74c3c;
+	transform-origin: top left;
+	transform: scale(2);
+	border-radius: 50px;
+	transition-property: background, border-radius;
+	transition-duration: 1s, 1s;
+	transition-delay: 5s, 2s;
+}
+
+p.curves {
+	height: 100px;
+	width: 100px;
+	line-height: 100px;
+	font-size: 17px;
+	border-radius: 20px;
+}
+
+p.curves:hover {
+	transition: 
+		transform 2s cubic-bezier(0.175, 0.885, 0.320, 1.275) 1s,
+		background-color 0.5s linear;
+	transform: translateX(300px);
+	background-color: teal ;
+/*	transition-property: transform;
+	transition-duration: 2s;
+	transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275) ;
+	transition-delay: 1s;*/
+}
