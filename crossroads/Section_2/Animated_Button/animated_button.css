@@ -47,14 +47,18 @@ p {
 
 p.move-right {
 	background-color: #3498db;
-	transform: translateX(100px);
+	transform: translateX(10px);
 }
 
 p.move-down {
 	background-color: #3498ac;
-	transform: translateY(20px);
 }
 
 p:hover {
-	transform: translate(20px, 20px);
+	transform: rotate(45deg);
+}
+
+p.move-down:hover {
+	transform: scale(2);
+	transform-origin: 0 0;
 }
